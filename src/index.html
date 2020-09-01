@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Birthday Calendar</title>
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+        <div class="main-heading">
+            <h2>Work Area</h2>
+        </div>
+        <div class="calendar-container" id="calContainer"></div>
+        <div class="input-container">
+            <textarea name="input-json" id="bdList" cols="60" rows="25" oninput="module.handleEvent()"></textarea>
+            <div class="app-controls" id="controls">
+                <label>Year</label>
+                <input type="number" name="inp-year" id="inpYear" max="2999" min="1900" oninput="module.handleEvent()">
+                <button type="submit" class="action-button" oninput="module.handleEvent()">UPDATE</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
